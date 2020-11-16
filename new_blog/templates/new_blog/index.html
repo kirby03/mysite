@@ -1,0 +1,10 @@
+{% if latest_blog_list %}
+    <ul>
+    {% for blog in latest_blog_list %}
+        <li>{{ blog.blog_text }}</li>
+    {% endfor %} 
+    </ul>
+{% else %}
+    <p>No blog available.</p>
+
+{% endif %}
